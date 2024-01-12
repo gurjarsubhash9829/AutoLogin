@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Auto Login App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Auto Login App</h1>
+
+    <div class="input-group">
+      <label for="numOfLinks">Number of Links:</label>
+      <select id="numOfLinks">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+
+    <div id="linkFields" class="input-group"></div>
+
+    <div class="input-group">
+      <label for="interval">Enter Time Interval (seconds):</label>
+      <input type="number" id="interval" placeholder="10" required>
+    </div>
+
+    <button id="startBtn" class="action-btn">Start</button>
+    <button id="stopBtn" class="action-btn" disabled>Stop</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
